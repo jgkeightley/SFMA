@@ -56,40 +56,356 @@
         </div>
 
         <div class="col-md-8 order-md-1">
-          <h4 class="mb-3">SFMA</h4>
+          <h3 class="mb-3">SFMA</h3>
           <form class="needs-validation" novalidate>
           
-            <div class="mb-3">
-              <label for="username">CxF</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
-                </div>
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
-                <div class="invalid-feedback" style="width: 100%;">
-                  Your username is required.
-                </div>
-              </div>
-            </div>
+            <h4 class="mb-3">Cervical Spine</h4>
+            <hr>
+
+            <h5 class="mb-3">Cervical Flexion</h5>
 
             <div class="mb-3">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1">FN</label>
+                <input class="form-check-input" type="radio" name="CxF" id="CxF-FN" value="FN">
+                <label class="form-check-label" for="CxF-FN">FN</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">DN</label>
+                <input class="form-check-input" type="radio" name="CxF" id="CxF-FP" value="FP">
+                <label class="form-check-label" for="CxF-FP">FP</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                <label class="form-check-label" for="inlineRadio3">DP</label>
+                <input class="form-check-input" type="radio" name="CxF" id="CxF-DP" value="DP">
+                <label class="form-check-label" for="CxF-DP">DP</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                <label class="form-check-label" for="inlineRadio4">FP</label>
+                <input class="form-check-input" type="radio" name="CxF" id="CxF-DN" value="DN">
+                <label class="form-check-label" for="CxF-DN">DN</label>
+              </div>
+              <textarea class="form-control" id="CxRL-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+            </div>
+            <hr>
+
+            <h5 class="mb-3">Cervical Extension</h5>
+
+            <div class="mb-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="CxE" id="CxE-FN" value="FN">
+                <label class="form-check-label" for="CxE-FN">FN</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="CxE" id="CxE-FP" value="FP">
+                <label class="form-check-label" for="CxE-FP">FP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="CxE" id="CxE-DP" value="DP">
+                <label class="form-check-label" for="CxE-DP">DP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="CxE" id="CxE-DN" value="DN">
+                <label class="form-check-label" for="CxE-DN">DN</label>
+              </div>
+              <textarea class="form-control" id="CxRL-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="mb-3">Cervical Left Rotation</h5>
+
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CxRL" id="CxRL-FN" value="FN">
+                    <label class="form-check-label" for="CxRL-FN">FN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CxRL" id="CxRL-FP" value="FP">
+                    <label class="form-check-label" for="CxRL-FP">FP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CxRL" id="CxRL-DP" value="DP">
+                    <label class="form-check-label" for="CxRL-DP">DP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CxRL" id="CxRL-DN" value="DN">
+                    <label class="form-check-label" for="CxRL-DN">DN</label>
+                  </div>
+                  <textarea class="form-control" id="CxRL-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h5 class="mb-3">Cervical Right Rotation</h5>
+
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CxRR" id="CxRR-FN" value="FN">
+                    <label class="form-check-label" for="CxRR-FN">FN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CxRR" id="CxRR-FP" value="FP">
+                    <label class="form-check-label" for="CxRR-FP">FP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CxRR" id="CxRR-DP" value="DP">
+                    <label class="form-check-label" for="CxRR-DP">DP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CxRR" id="CxRR-DN" value="DN">
+                    <label class="form-check-label" for="CxRR-DN">DN</label>
+                  </div>
+                  <textarea class="form-control" id="CxRL-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+                </div>
               </div>
             </div>
+            <hr>
+          
+            <h4 class="mb-3">Upper Limb</h4>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="mb-3">Left Lateral Rotation Flexion</h5>
+
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="LRFL" id="LRFL-FN" value="FN">
+                    <label class="form-check-label" for="LRFL-FN">FN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="LRFL" id="LRFL-FP" value="FP">
+                    <label class="form-check-label" for="LRFL-FP">FP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="LRFL" id="LRFL-DP" value="DP">
+                    <label class="form-check-label" for="LRFL-DP">DP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="LRFL" id="LRFL-DN" value="DN">
+                    <label class="form-check-label" for="LRFL-DN">DN</label>
+                  </div>
+                  <textarea class="form-control" id="LRFL-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h5 class="mb-3">Right Lateral Rotation Flexion</h5>
+
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="LRFR" id="LRFR-FN" value="FN">
+                    <label class="form-check-label" for="LRFR-FN">FN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="LRFR" id="LRFR-FP" value="FP">
+                    <label class="form-check-label" for="LRFR-FP">FP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="LRFR" id="LRFR-DP" value="DP">
+                    <label class="form-check-label" for="LRFR-DP">DP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="LRFR" id="LRFR-DN" value="DN">
+                    <label class="form-check-label" for="LRFR-DN">DN</label>
+                  </div>
+                  <textarea class="form-control" id="LRFR-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="mb-3">Left Medial Rotation Extension</h5>
+
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MREL" id="MREL-FN" value="FN">
+                    <label class="form-check-label" for="MREL-FN">FN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MREL" id="MREL-FP" value="FP">
+                    <label class="form-check-label" for="MREL-FP">FP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MREL" id="MREL-DP" value="DP">
+                    <label class="form-check-label" for="MREL-DP">DP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MREL" id="MREL-DN" value="DN">
+                    <label class="form-check-label" for="MREL-DN">DN</label>
+                  </div>
+                  <textarea class="form-control" id="MREL-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h5 class="mb-3">Right Medial Rotation Extension</h5>
+
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MRER" id="MRER-FN" value="FN">
+                    <label class="form-check-label" for="MRER-FN">FN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MRER" id="MRER-FP" value="FP">
+                    <label class="form-check-label" for="MRER-FP">FP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MRER" id="MRER-DP" value="DP">
+                    <label class="form-check-label" for="MRER-DP">DP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MRER" id="MRER-DN" value="DN">
+                    <label class="form-check-label" for="MRER-DN">DN</label>
+                  </div>
+                  <textarea class="form-control" id="MRER-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <h5 class="mb-3">Multi-Segmental Flexion</h5>
+
+            <div class="mb-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="MSF" id="MSF-FN" value="FN">
+                <label class="form-check-label" for="MSF-FN">FN</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="MSF" id="MSF-FP" value="FP">
+                <label class="form-check-label" for="MSF-FP">FP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="MSF" id="MSF-DP" value="DP">
+                <label class="form-check-label" for="MSF-DP">DP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="MSF" id="MSF-DN" value="DN">
+                <label class="form-check-label" for="MSF-DN">DN</label>
+              </div>
+              <textarea class="form-control" id="MSF-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+            </div>
+            <hr>
+
+            <h5 class="mb-3">Multi-Segmental Extension</h5>
+
+            <div class="mb-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="MSE" id="MSE-FN" value="FN">
+                <label class="form-check-label" for="MSE-FN">FN</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="MSE" id="MSE-FP" value="FP">
+                <label class="form-check-label" for="MSE-FP">FP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="MSE" id="MSE-DP" value="DP">
+                <label class="form-check-label" for="MSE-DP">DP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="MSE" id="MSE-DN" value="DN">
+                <label class="form-check-label" for="MSE-DN">DN</label>
+              </div>
+              <textarea class="form-control" id="MSE-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="mb-3">Left Multi-Segmental Rotation</h5>
+
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MSRL" id="MSRL-FN" value="FN">
+                    <label class="form-check-label" for="MSRL-FN">FN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MSRL" id="MSRL-FP" value="FP">
+                    <label class="form-check-label" for="MSRL-FP">FP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MSRL" id="MSRL-DP" value="DP">
+                    <label class="form-check-label" for="MSRL-DP">DP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MSRL" id="MSRL-DN" value="DN">
+                    <label class="form-check-label" for="MSRL-DN">DN</label>
+                  </div>
+                  <textarea class="form-control" id="MSRL-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h5 class="mb-3">Right Multi-Segmental Rotation</h5>
+
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MSRR" id="MSRR-FN" value="FN">
+                    <label class="form-check-label" for="MSRR-FN">FN</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MSRR" id="MSRR-FP" value="FP">
+                    <label class="form-check-label" for="MSRR-FP">FP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MSRR" id="MSRR-DP" value="DP">
+                    <label class="form-check-label" for="MSRR-DP">DP</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="MSRR" id="MSRR-DN" value="DN">
+                    <label class="form-check-label" for="MSRR-DN">DN</label>
+                  </div>
+                  <textarea class="form-control" id="MSRR-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <h5 class="mb-3">Single Leg Stance</h5>
+
+            <div class="mb-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="SLS" id="SLS-FN" value="FN">
+                <label class="form-check-label" for="SLS-FN">FN</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="SLS" id="SLS-FP" value="FP">
+                <label class="form-check-label" for="SLS-FP">FP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="SLS" id="SLS-DP" value="DP">
+                <label class="form-check-label" for="SLS-DP">DP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="SLS" id="SLS-DN" value="DN">
+                <label class="form-check-label" for="SLS-DN">DN</label>
+              </div>
+              <textarea class="form-control" id="SLS-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+            </div>
+            <hr>
+
+            <h5 class="mb-3">Deep Overhead Squat</h5>
+
+            <div class="mb-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="DOHS" id="DOHS-FN" value="FN">
+                <label class="form-check-label" for="DOHS-FN">FN</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="DOHS" id="DOHS-FP" value="FP">
+                <label class="form-check-label" for="DOHS-FP">FP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="DOHS" id="DOHS-DP" value="DP">
+                <label class="form-check-label" for="DOHS-DP">DP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="DOHS" id="DOHS-DN" value="DN">
+                <label class="form-check-label" for="DOHS-DN">DN</label>
+              </div>
+              <textarea class="form-control" id="DOHS-Note" placeholder="Limitations, ROM, pain areas, etc."></textarea>
+            </div>
+            <hr>
 
             <div class="mb-3">
               <label for="address">Address</label>
